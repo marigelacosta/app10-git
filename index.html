@@ -1,0 +1,615 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>novena aplicacion movil</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app10.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+
+ <body onLoad="MM_preloadImages('imagenes/historia1.jpg','imagenes/gamaalta2.jpg','imagenes/compañias3.jpg','imagenes/medicinaV.jpg','imagenes/turismo4.jpg','imagenes/veterinaria4.jpg','imagenes/biologia3.jpg','imagenes/turismo3.jpg')">
+
+   <div data-role="page" id="Principal" data-theme="c">
+    <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+     <h1>Carreras Universitarias </h1>
+    </div>
+    <div data-role="main" class="ui-content">
+   </div>
+   
+    <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Biologia Marina </h2>
+        
+       </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Administracion Turistica </h2>
+        
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Medicina Veterinaria y Zootecnia</h2>
+        
+       </a>
+    </li>     
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Datos del desarrollador</h2>
+        
+       </a>
+    </li>         
+     </ul>
+     
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<center><div class="ws_images"><ul>
+		<li><img src="data1/images/admin.jpg" alt="admin" title="admin" id="wows1_0"/></li>
+		<li><img src="data1/images/turismo1.jpg" alt="turismo1" title="turismo1" id="wows1_1"/></li>
+		<li><img src="data1/images/turismo3.jpg" alt="turismo3" title="turismo3" id="wows1_2"/></li>
+		<li><img src="data1/images/turismo2.jpg" alt="turismo2" title="turismo2" id="wows1_3"/></li>
+		<li><img src="data1/images/facultadbio.png" alt="facultadbio" title="facultadbio" id="wows1_4"/></li>
+		<li><img src="data1/images/bilogia4.jpg" alt="bilogia4" title="bilogia4" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/biologia1.jpg" alt="bootstrap carousel" title="biologia1" id="wows1_6"/></a></li>
+		<li><img src="data1/images/biologia2.jpg" alt="biologia2" title="biologia2" id="wows1_7"/></li>
+	</ul></div></center>
+	<div class="ws_bullets"><div>
+		<a href="#" title="admin"><span><img src="data1/tooltips/admin.jpg" alt="admin"/>1</span></a>
+		<a href="#" title="turismo1"><span><img src="data1/tooltips/turismo1.jpg" alt="turismo1"/>2</span></a>
+		<a href="#" title="turismo3"><span><img src="data1/tooltips/turismo3.jpg" alt="turismo3"/>3</span></a>
+		<a href="#" title="turismo2"><span><img src="data1/tooltips/turismo2.jpg" alt="turismo2"/>4</span></a>
+		<a href="#" title="facultadbio"><span><img src="data1/tooltips/facultadbio.png" alt="facultadbio"/>5</span></a>
+		<a href="#" title="bilogia4"><span><img src="data1/tooltips/bilogia4.jpg" alt="bilogia4"/>6</span></a>
+		<a href="#" title="biologia1"><span><img src="data1/tooltips/biologia1.jpg" alt="biologia1"/>7</span></a>
+		<a href="#" title="biologia2"><span><img src="data1/tooltips/biologia2.jpg" alt="biologia2"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+     <div>
+       <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+      <h4>Guia de Carreras</h4>
+      <h4> Maria del Angel Acosta Flores</h4>
+   </div>
+  </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1>Biologia Marina</h1>
+          </div>
+          <div data-role="content" align="center">
+            <div> 
+            <div data-role="collapsible" data-content-theme="false">
+            <h1> Flora y Fauna Marina</h1>
+            <div>
+            <img src="imagenes/flora y fauna.jpg" width="50%" height="50%">
+            </div>
+            </div>
+             <h2> Es la ciencia que estudia los seres vivos que habitan los ecosistemas marinos. Así como la conservación de la vida marina, tanto de sus elementos biológicos, como su flora y fauna, también de sus elementos de orden físico y químico del medio acuático. Su objetivo es el mantenimiento integral de todas las especies marinas y mejora de sus recursos.<br>
+             Más que una ciencia en sí misma se trata de un sistema de aplicación de otras ciencias tales como la geología, la geografía, la química, la física y la biología, indispensables para el estudio global y correlacionado de los fenómenos que caracterizan el ambiente marino. La oceanografía se subdivide en tres ramas principales: Oceanografía física, oceanografía química y oceanografía biológica. </h2></div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('bilogia','','imagenes/biologia3.jpg',1)"><img src="imagenes/facultadbio.png" width="180" height="137" id="bilogia"></a>
+<ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Perfil de Aspirante y Perfil de Egresado </h2>
+      </a>
+    </li>
+  </ul>
+ <div data-role="main" class="ui-content">
+   </div>
+   <div>
+     <div data-role="main" class="ui-content" align="center">
+ <div style="width:110%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina8" data-role="button" id="#">
+     <h4>Campo de Trabajo y Requisitos</h4>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="http://www.uabcs.mx/ofertas/carrera/35" data-role="button" id="#">
+     <h3>Escuela de Biologia Marina</h3>
+    </a>
+   </li>
+       </ul>
+       </div>
+       </div>    
+ </div>
+            </div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+    <h4>Guia de Carreras, MAAF</h4>
+    <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+        </div>
+        </div>
+     </div>
+     </div>
+     </div>
+
+      
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Administracion Turistica</h1>   
+   </div>   
+   <div data-role="content" align="center">
+     <div> 
+            <div data-role="collapsible" data-content-theme="false">
+            <h1> Turismo</h1>
+            <div>
+            <img src="imagenes/turismo1.jpg" width="50%" height="50%">
+            </div>
+            </div>
+       <h2>La administración es el proceso por el cual se organizan y distribuyen los recursos financieros, humanos o tecnológicos de una empresa u organización de una manera eficiente para así alcanzar los objetivos propuestos.<br> 
+       El administrador turístico y hotelero podrá participar en la planeación, organización, dirección y control de procesos de cualquier empresa sea o no de vocación turística, hotelera o gastronómica.<br>
+       Así mismo, el administrador turístico y hotelero estará preparado para crear su propia empresa, generando así oportunidades de empleo.
+ </h2> 
+ <img src="imagenes/turismo2.jpg" width="50%" height="50%"> 
+ </div>
+ <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Perfil de Aspirante y Perfil de Egresado </h2>
+      </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.umad.edu.mx/administracion-turistica/" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Otras Escuelas </h2>
+      </a>
+    </li>
+    </ul>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('turismo','','imagenes/turismo4.jpg',1)"><img src="imagenes/turismo3.jpg" width="430" height="117" id="turismo"></a>
+<div data-role="main" class="ui-content">
+</div>
+   <div>
+     <div data-role="main" class="ui-content" align="center">
+ <div style="width:110%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina9" data-role="button" id="#">
+     <h2>Campo de Trabajo</h2>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="http://www.buap.mx/portal_pprd/wb/EDUCATIVA/administracion_turistica" data-role="button" id="#">
+     <h4>Escuela de Administracion Turistica</h4>
+     <h2> (BUAP)</h2>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="http://oferta.unam.mx/carreras/3/administracion" data-role="button" id="#">
+     <h4>Escuela de Administracion Turistica</h4>
+     <h2> (UNAM)</h2>
+    </a>
+   </li>
+   </ul>
+     </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+   <h4>Guia de Carreras, MAAF</h4>
+    <img src="res/android/mdpi.png" width="46" height="46">
+</div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1>Medicina Veterinaria y Zootecnia</h1>
+          </div>
+          <div data-role="content" align="center">
+            <div>
+            <div data-role="collapsible" data-content-theme="false">
+            <h1> Medicina Veterinaria</h1>
+            <div>
+            <img src="imagenes/veterinaria.png" width="50%" height="50%">
+            </div>
+            </div> 
+             <h2>"Medicina veterinaria"<br>
+             Es la rama de la medicina que se ocupa de la prevención, diagnóstico y tratamiento de enfermedades, trastornos y lesiones en los animales no humanos. El ámbito de la medicina veterinaria es amplio, cubriendo todas las especies, tanto domésticas como silvestres.<br>
+             El profesional universitario que pone en práctica esta ciencia es llamado Veterinario, Médico Veterinario o Médico Cirujano Veterinario, mientras que en algunos países de Latinoamérica, el profesional que se dedica a la productividad agropecuaria es llamado Zootenista. El profesional técnico es llamado Técnico o Enfermero veterinario.<br>
+             <div data-role="collapsible" data-content-theme="false">
+            <h1> Zootecnia</h1>
+            <div>
+            <img src="imagenes/zootecnia.jpg" width="50%" height="50%">
+            </div>
+            </div> 
+             "Zootecnia"<br>
+             Es una ciencia que estudia diversos parámetros para el mejor aprovechamiento de los animales domésticos y silvestres, pero siempre teniendo en cuenta el bienestar animal ante todo y si estos serán útiles al hombre con la finalidad de obtener el máximo rendimiento, administrando los recursos adecuadamente bajo criterios de sostenibilidad.</h2></div>
+          <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Perfil de Aspirante y Perfil de Egresado </h2>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="https://www.universidaduvm.mx/licenciatura-en-medicina-veterinaria-y-zootecnia" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Otras Escuelas</h2>
+      </a>
+    </li>
+    </ul>
+     <div data-role="main" class="ui-content">
+   </div>
+   <div>
+     <div data-role="main" class="ui-content" align="center">
+ <div style="width:120%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina10" data-role="button" id="#">
+     <h2>Campo de Trabajo</h2>
+    </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="http://cmas.siu.buap.mx/portal_pprd/wb/EDUCATIVA/medicina_veterinaria_y_zootecnia_1" data-role="button" id="#">
+     <h5>Escuela de Medicina Veterinaria y Zootecnia</h5>
+     <h2> (BUAP)</h2>
+    </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.fmvz.unam.mx/" data-role="button" id="#">
+     <h5>Escuela de Medicina Veterinaria y Zootecnia</h5>
+     <h2> (UNAM)</h2>
+    </a>
+   </li>
+   </ul>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('veterinaria','','imagenes/medicinaV.jpg',1)"><img src="imagenes/logomedic.jpg" width="197" height="163" id="veterinaria"></a>
+</div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+          <h4>Guia de Carreras, MAAF</h4>
+           <img src="res/android/mdpi.png" width="46" height="46">
+        </div>
+        </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+       
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Datos del desarrollador</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+        <h2> <u>Alumna:</u> Maria del Angel Acosta Flores<br>
+          <u>Semestre:</u>4to        <u>Grupo:</u>"G"<br>
+          <u>Submodulo:</u> Desarrolla Aplicaciones Moviles<br>
+          <u>Docente:</u> Jose Antonio Gomez Hernandez  
+      </h2> 
+       </div>
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<center><div class="ws_images"><ul>
+		<li><img src="data2/images/facultad1.jpg" alt="facultad1" title="facultad1" id="wows2_0"/></li>
+		<li><img src="data2/images/veterinaria2.jpg" alt="veterinaria2" title="veterinaria2" id="wows2_1"/></li>
+		<li><img src="data2/images/facultad2.png" alt="facultad2" title="facultad2" id="wows2_2"/></li>
+		<li><img src="data2/images/veterinaria4.jpg" alt="veterinaria4" title="veterinaria4" id="wows2_3"/></li>
+		<li><img src="data2/images/facultad3.png" alt="facultad3" title="facultad3" id="wows2_4"/></li>
+		<li><img src="data2/images/veterinaria3.jpg" alt="veterinaria3" title="veterinaria3" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/unam.jpg" alt="jquery slider" title="unam" id="wows2_6"/></a></li>
+		<li><img src="data2/images/faladmin1.jpg" alt="faladmin1" title="faladmin1" id="wows2_7"/></li>
+	</ul></div></center>
+	<div class="ws_bullets"><div>
+		<a href="#" title="facultad1"><span><img src="data2/tooltips/facultad1.jpg" alt="facultad1"/>1</span></a>
+		<a href="#" title="veterinaria2"><span><img src="data2/tooltips/veterinaria2.jpg" alt="veterinaria2"/>2</span></a>
+		<a href="#" title="facultad2"><span><img src="data2/tooltips/facultad2.png" alt="facultad2"/>3</span></a>
+		<a href="#" title="veterinaria4"><span><img src="data2/tooltips/veterinaria4.jpg" alt="veterinaria4"/>4</span></a>
+		<a href="#" title="facultad3"><span><img src="data2/tooltips/facultad3.png" alt="facultad3"/>5</span></a>
+		<a href="#" title="veterinaria3"><span><img src="data2/tooltips/veterinaria3.jpg" alt="veterinaria3"/>6</span></a>
+		<a href="#" title="unam"><span><img src="data2/tooltips/unam.jpg" alt="unam"/>7</span></a>
+		<a href="#" title="faladmin1"><span><img src="data2/tooltips/faladmin1.jpg" alt="faladmin1"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+        <h4>Guia de Carreras, MAAF</h4>
+         <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+   </div>
+   </div>
+   </div>
+   </div>
+   </div>
+          
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Perfil de Aspirante y Perfil de Egresado</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+       <div data-role="collapsible" data-content-theme="false">
+            <h1> Biologia Marina</h1>
+            <div>
+            <img src="imagenes/bilogia4.jpg" width="50%" height="50%">
+            </div>
+            </div>
+      <h2> <u>"Perfil de Aspirante"</u><br> 
+      El aspirante a ingresar al plan de Estudios de la Carrera de Biólogo Marino de la UABCS, deberá poseer conocimientos y habilidades de nivel medio superior en:<br>
+     •   Razonamiento Matemático<br>
+     •   Razonamiento <br>
+     •   Ciencias Naturales<br>
+     •   Ciencias Sociales<br>
+     •   Español<br>
+ 
+Además, deberá mostrar interés por actividades al aire libre, mecánicas, científicas y de servicio social, así como por los valores de la ética, responsabilidad,honestidad, compromiso en su desempeño, cultura emprendedora y de calidad, cuidado del medio ambiente y espíritu de servicio a la comunidad.<br>
+
+<u> "Perfil de Egresado"</u><br>
+
+El Biólogo Marino es competente para:<br>
+• Coadyuvar en el maneio y conservación de los seres vivos.<br>
+• Colaborar en Investigaciones originales y de vanguardia sobre ecosistemas marinos.<br>
+• Colaborar en proyectos de manejo y conservación de los recursos marinos.<br>
+• Participar en el desarrollo de biotecnologías<br>
+• Colaborar en propuestas y medidas para mitigar la alteración de los hábitats marinos.<br>
+• Colaborar a niv. local, regional, nacional en internacional en la evaluación de la vulnerabilidad de los recursos marinos al cambio climático.<br>
+• Colaborar en la gestión de recursos para proyectos científicos, técnicos ambientales y de Inversión.<br>
+• Divulgar al público en general la infamación técnica y científica relativa a la Biología Marina.<br>
+• Transmitir de manera formal el conocimiento de las ciencias biológicas.<br>
+
+ <u>"Titulacion"</u><br>
+
+Los requisitos para la titulación establecidos en el artículo 28 del Reglamento General de Exámenes, contemplan diferentes modalidades en la parte escrita del examen profesional, así como las condiciones para la exención del mismo, en el capítulo V del mismo reglamento.
+
+</h2>
+</div>
+      </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Guia de Carreras, MAAF</h4>
+      <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+  </div>
+</div>
+</div> 
+</div>
+</div>
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Perfil de Ingreso y Perfil de Egreso</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+       <div data-role="collapsible" data-content-theme="false">
+            <h1> Administracion Turistica</h1>
+            <div>
+            <img src="imagenes/turismo5.jpg" width="50%" height="50%">
+            </div>
+            </div>
+<h2><u>"Perfil de ingreso"</u><br>
+El aspirante a ingresar a esta licenciatura deberá contar con los siguientes conocimientos, habilidades, actitudes y valores:<br>
+- Cualidades de liderazgo para dirigir y motivar a otros.<br>
+- Habilidad para interrelacionarse con otras personas y trabajar en equipo.<br>
+- Capacidad para efectuar diagnósticos, analizar fenómenos económicos, culturales, políticos o sociales de manera ordenada y sistemática.<br>
+- Capacidad para solucionar problemas complejos.<br>
+- Adaptabilidad al cambio.<br>
+- Interés por el aprendizaje de idiomas.<br>
+- Disposición para el aprendizaje de nuevos conocimientos.<br>
+- Empatía, apertura al diálogo, comprensión y tolerancia hacia la diversidad cultural.<br>
+- Conciencia de respeto y protección al patrimonio natural y cultural.<br>
+
+<u>"Perfil de egreso"</u><br>
+El egresado de esta licenciatura tendrá los siguientes conocimientos, habilidades, actitudes y valores:<br>
+- Conocerá las metodologías básicas de investigación.<br>
+- Aplicará los procesos administrativos de manera eficaz y eficiente en las empresas turísticas.<br>
+- Evaluará el patrimonio cultural tanto nacional como internacional, para su gestión y operación en empresas turísticas del país o del extranjero.<br>
+- Aplicará y desarrollará conceptos y teorías relacionadas con el turismo en empresas e instituciones de este sector. <br>
+- Dominará una lengua extranjera y se comunicará de manera asertiva tanto verbalmente como por escrito.<br>
+- Empleará técnicas de negociación y manejo de conflictos en la administración de las organizaciones turísticas.<br>
+- Planeará proyectos turísticos de impacto social.
+
+
+
+
+</h2>
+</div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('administracion','','imagenes/turismo3.jpg',1)"><img src="imagenes/faladmin1.jpg" width="308" height="94" id="administracion"></a> </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Guia de Carreras, MAAF</h4>
+      <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+  </div>
+</div>
+</div>
+</div>    
+</div>                             
+   
+    <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Perfil de Ingreso y Perfil de Egreso</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+       <div data-role="collapsible" data-content-theme="false">
+            <h1> Medicina Veterinaria y Zootecnia</h1>
+            <div>
+            <center><img src="imagenes/veterinaria3.jpg" width="50%" height="50%"></center>
+            </div>
+            </div>
+<h2><u>"Perfil de ingreso"</u><br>
+Los aspirantes a ingresar al PUIMVZ deberán reunir características esenciales en los siguientes ámbitos:<br>
+Conocimientos<br>
+
+Ser médicos veterinarios zootecnistas o médicos veterinarios con deseos de consolidar los conocimientos profesionales y de desarrollar las habilidades clínicas o zootécnicas que les permita aplicar una metodología enfocada a la solución de problemas.<br>
+
+Cualidades personales<br>
+
+Disciplina, actitud crítica y reflexiva,  proactividad, comunicación eficaz y deseos de brindar un mejor servicio, sustentado en valores, calidad y eficiencia.<br>
+
+Habilidades<br>
+
+Competencias básicas de medicina o zootecnia en el campo de conocimiento de interés.<br>
+
+<u>"Perfil de egreso"</u><br>
+
+Conocimientos<br>
+
+Está capacitado para ofrecer servicios generales de medicina o zootecnia, así como para remitir con oportunidad y certeza los casos o problemáticas que requieran atención especializada.<br>
+
+Cualidades personales<br>
+
+Actúa en forma crítica y reflexiva, y comprende holísticamente el concepto salud-enfermedad y la problemática zootécnica en el nivel y campo de conocimiento de su competencia.<br>
+
+ 
+
+Habilidades<br>
+
+Dispone de una sólida metodología en el diagnóstico orientado a la solución de problemas y posee herramientas como el estudio independiente y el trabajo colaborativo.<br>
+
+ 
+
+Ejerce su práctica profesional con calidad, principios éticos y alto compromiso social, con fundamento en el conocimiento científico, el respeto a la vida, la dignidad, los derechos del ser humano, de los animales y el ambiente.
+
+
+
+</h2>
+</div>
+      </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Guia de Carreras, MAAF</h4>
+      <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+  </div>
+</div>
+</div> 
+</div>
+</div>
+   
+    <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Campo de Trabajo Y Requisitos</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+       <div data-role="collapsible" data-content-theme="false">
+            <h1> Biologia Marina</h1>
+            <div>
+            <img src="imagenes/biologia2.jpg" width="50%" height="50%">
+            </div>
+            </div>
+<h2><u>"Campo de Trabajo"</u><br>
+El egresado de Biología Marina podrá desempeñarse profesionalmente en:<br>
+ • Organismos públicos nacionales y organismos no gubernamentales.<br>
+ • El sistema científico-educativo (universidades, centros de investigación).<br>
+ • El sistema tecnológico (parques tecnológicos, institutos tecnológicos y centros de empresas e innovación)<br>
+ • El sistema productivo (empresas)<br>
+ <u>"Requisitos"</u><br>
+ - Requisitos de Ingreso -<br>
+Además de los requisitos de inscripción que aparecerán en la convocatoria, si eres aceptado en la carrera de Biología Marina deberás:<br>
+ • Realizar de manera Obligatoria dos semanas antes de que comiencen las clases un Curso de Nivelación con una duración de 80 horas en las materias de:  Física, Química general y Matemáticas.<br>
+ • Realizar un examen psicométrico.<br>
+
+ - Requisitos para solicitar examen de selección -<br>
+ • Ser egresado de bachillerato o cursar el último semestre<br>
+ • Presentar original y copia fotostática de credencial reciente que tenga fotografía y firma del aspirante y dos fotografías de frente, tamaño infantil y con nombre al reverso<br>
+ • Pagar el derecho a examen (para saber el precio consultar la convocatoria en la UABCS<br>
+ • Llenar la solicitud de registro para el examen de selección (traer borrador y lápices del 2 ó 2 y medio).<br>
+ 
+- Requisitos de Egreso -<br>
+• Cubrir los créditos del plan de estudios, además de los requisitos establecidos en la legislación universitaria.<br>
+• Acreditar los niveles 1A a 2B de Inglés, en el Departamento de Lenguas Extranjeras.<br>
+• Presentar constancia de acreditación de un semestre de actividades deportivas y de uno de actividades artísticas o culturales.<br>
+• Cubrir el Servicio Social.
+
+
+
+</h2>
+</div>
+      </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Guia de Carreras, MAAF</h4>
+      <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+  </div>
+</div>
+</div> 
+</div>
+</div>
+ <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Campo de Trabajo</h1>
+    </div>
+    <div data-role="content" align="center">
+      
+<h2><u>"Campo de Trabajo"</u><br>
+En la licenciatura en Administración Turística el egresado podrá incorporarse en los diferentes ámbitos del sector turístico: complejos turísticos, industria hotelera, bares, restaurantes, agencias de viajes, transportadoras turísticas, guía de turistas, animador turístico, líneas aéreas, centros de convenciones; en la Administración Pública, en sus tres niveles de gobierno por ejemplo, la Secretaría de Turismo, de Cultura, Relaciones Exteriores y  Comercio, entre otras. 
+
+
+</h2>
+ <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('admin','','imagenes/turismo4.jpg',1)"><img src="imagenes/faladmin2.jpg" width="172" height="294" id="admin"></a></center> </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Guia de Carreras, MAAF</h4>
+      <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+ </div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+ <div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Campo de Trabajo</h1>
+    </div>
+    <div data-role="content" align="center">
+      
+<h2><u>"Campo de Trabajo"</u><br>
+Autoempleo (producción animal, clínicas, farmacias veterinarias, forrajeras, asistencia técnica, bufetes, etc.), microempresas (producción y comercialización), unidades de producción animal, sector público, uniones y asociaciones ganaderas, industria farmacéutica veterinaria, institutos de investigación, industrias de maquinaria y equipos, industria de la construcción de instalaciones pecuarias, inspectoría veterinaria, laboratorios de diagnóstico, investigación y desarrollo de equipos científicos, administración y economía pecuaria, instituciones educativas, administración pública. Por lo que brinda a la sociedad servicios como: Diagnóstico clínico de enfermedades, prescripción y aplicación de productos farmacéuticos y biológicos, promoción del bienestar animal, gestión epidemiológica, reproducción, transformación y protección sanitaria de productos de origen animal, mejoramiento genético, administración de recursos forrajeros, alimentación y nutrición, diseño de instalaciones, administración pública, pecuaria y sanitaria, autogestión y administración de empresas agropecuarias e industrias afines, desarrollo rural, protección del ambiente, docencia e investigación. 
+
+
+</h2>
+ <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('veterinaria','','imagenes/veterinaria4.jpg',1)"><img src="imagenes/facultad2.png" width="224" height="225" id="veterinaria2"></a></center> </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Guia de Carreras, MAAF</h4>
+      <center><img src="res/android/mdpi.png" width="46" height="46"></center>
+ </div>
+</div>
+</div> 
+</div>
+                                                        
+</body>
+</html>
